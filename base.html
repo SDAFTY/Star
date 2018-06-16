@@ -9,7 +9,6 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MGKBKT5');
     </script>
-    <!-- End Google Tag Manager -->
 
     <script>
         var _hmt = _hmt || [];
@@ -26,46 +25,6 @@
     <!-- Meta -->
     <meta charset='utf-8'/>
     <meta http-equiv='Content-Language' content='zh'/>
-    <meta name='viewport' content='width=device-width, initial-scale=1'/>
-    <meta name='keywords' content=''/>
-    <meta name='description' content='欢迎访问星巴克中国官网。'>
-    <meta name='baidu-site-verification' content='u7Vir8pZFL' />
-    <link rel='canonical' href='/'>
-
-    <!-- Open graph -->
-    <meta property='og:site_name' content='星巴克'/>
-    <meta property='og:type' connavtent='website'/>
-    <meta property='og:title' content='用每一杯咖啡传递星巴克独特的咖啡体验'/>
-    <meta property='og:url' content='/'/>
-    <meta property='og:description' content='欢迎访问星巴克中国官网。'/>
-    <meta property='og:image' content=''/>
-
-    <!-- Twitter card -->
-    <meta name='twitter:card' content='summary_large_image'/>
-    <meta name='twitter:site' content='{"username"=>"@starbucks"}'/>
-    <meta name='twitter:title' content='用每一杯咖啡传递星巴克独特的咖啡体验'/>
-    <meta name='twitter:description' content='欢迎访问星巴克中国官网。'/>
-    <meta name='twitter:image' content=''/>
-
-    <!-- WeChat sharing -->
-    <script>
-        var WECHAT_TITLE = '星巴克官网: 用每一杯咖啡传递星巴克独特的咖啡体验';
-        var WECHAT_DESC = '欢迎访问星巴克中国官网。';
-        var WECHAT_IMAGE = '/assets/images/wechat.png';
-        var WCHAT_NO_GA = '';
-    </script>
-
-
-    <!-- Favicons -->
-    <link rel='apple-touch-icon' sizes='180x180' href='imgs/apple-touch-icon.png'>
-    <link rel='icon' type='image/png' href='imgs/favicon-32x32.png' sizes='32x32'>
-    <link rel='icon' type='image/png' href='imgs/favicon-16x16.png' sizes='16x16'>
-    <link rel='manifest' href='/assets/favicons/manifest.json'>
-    <link rel='mask-icon' href='imgs/safari-pinned-tab.svg' color='#ef233c'>
-    <link rel='shortcut icon' href='imgs/favicon.ico'>
-    <meta name='msapplication-config' content='/assets/favicons/browserconfig.xml'>
-    <meta name='theme-color' content='#ffffff'>
-
 
     <!-- CSS -->
     <link href="DEMO/bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
@@ -85,38 +44,122 @@
         if (isChrome) document.body.classList.add('chrome');
     </script>
 
-    <div class="app-view-wrapper" style="background-color: white;">
+    <div class="app-view-wrapper">      
+    <nav id='nav'>
+        <div class='container' >
+            <!--bootstrap css-->
+            <header class='header'>
+                <a class='logo' href='/'>
+                    <img src='imgs/logo.svg' alt='sign'/>
+                </a>
+                <div class='primary'>
+                    <ul>
+                        <li class='stores'>
+                            <a id='stores-primary'  href='/stores/'>
+                                门店
+                            </a>
+                        </li>
+                        <li class='account'>
+                            <a id='account-primary'  href='account/index.html'>
+                            我的帐户
+                            </a>
+                        </li>
 
-        <nav id='nav'>
-            <div class='container' style="background-color: plum;"><!--bootstrap css-->
-                MENU
+                        <li class='menu'>
+                            <a id='menu-primary'  href='menu/index.html'>
+                            菜单
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class='icon trigger' rel='nav-overlay' id='nav-menu'>
+                    <img src='imgs/icon-hamburger.svg'/>
+                </a>
+            </header>
+            <div class='body'>                   
+                <div id='account-entry' class='container middle secondary'>
+                    <div data-reactroot="">
+                        <span>
+                            <div class="display-1">
+                                <span>心情惬意，来杯咖啡吧&nbsp;☕</span>
+                            </div>
+                            <footer class="account margin2 mobile-hidden">
+                                <a class="sign-in" href="/account/#/">
+                                    <img src="imgs/icon-account.svg">
+                                    <span><span>登录</span></span>
+                                </a>
+                                <a class="button small register" href="/account/register">
+                                    <span><span>注册</span></span>
+                                </a>
+                            </footer>
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div class='overlay' id='nav-overlay active' style="background-color: #c2d5ff;">
+            <div class='overlay' id='nav-overlay active' style="background-color: peru;">
+            MORE
+        </div>
+    </nav>
 
-            </div>
-        </nav>
-
-
-        <section id="content">
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <section id='content' style="background-color: yellow;">
+            PAGE CONTENT
         </section>
     </div>
+ <!-- Navigation bottom mobile -->
+<div class='primary-mobile' ">
+    <ul class='flex justify-around logging-in-element'>
+        <li class='home' id='home-mobile'>
+            <a href='/' class='active'>
+                <span class='icons'>
+                    <img src='icon-home.svg'/>
+                    <img src='icon-home-active.svg' class='active'/>
+                </span>
+                <div id='home-mobile'>主页</div>
+            </a>
+        </li>
 
-    <div class='primary-mobile' style="background-color: green;">
-        MOBULE MENU
-    </div>
+        <li class='stores' id='stores-mobile'>
+            <a href='/stores/'>
+                <span class='icons'>
+                    <img src='icon-stores.svg'/>
+                    <img src='icon-stores-active.svg' class='active'/>
+                </span>
+                <div id='stores-mobile'>门店</div>
+            </a>
+        </li>
+
+        <li class='account' id='account-mobile'>
+            <a href='/account/'>
+                <span class='icons'>
+                    <img src='icon-account.svg'/>
+                    <img src='icon-account-active.svg' class='active'/>
+                </span>
+                <div id='account-mobile'>我的帐户</div>
+            </a>
+        </li>
+
+        <li class='menu' id='menu-mobile'>
+            <a href='/menu/'>
+                <span class='icons'>
+                    <img src='icon-menu.svg'/>
+                    <img src='icon-menu-active.svg' class='active'/>
+                </span>
+                <div id='menu-mobile'>菜单</div>
+            </a>
+        </li>
+
+        <li class='more' id='more-mobile'>
+            <a class='icon trigger' rel='nav-overlay'>
+                <span class='icons'>
+                    <img src='icon-more.svg'/>
+                    <img src='icon-more-active.svg' class='active'/>
+                </span>
+                <div>更多</div>
+            </a>
+        </li>
+    </ul>
+
+</div>
 
 
 </body>
