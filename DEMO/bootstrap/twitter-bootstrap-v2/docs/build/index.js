@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var hogan = require('hogan.js')
+var hogan = require('./node_modules/hogan.js/lib/hogan')
   , fs    = require('fs')
   , prod  = process.argv[2] == 'production'
 
