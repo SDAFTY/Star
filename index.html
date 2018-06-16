@@ -46,39 +46,8 @@
 
     <title>星巴克 | 用每一杯咖啡传递星巴克独特的咖啡体验</title>
 
-    <!-- Meta -->
-
-
-
-
-
-
-
-
-
     <meta charset='utf-8'/>
     <meta http-equiv='Content-Language' content='zh'/>
-    <meta name='viewport' content='width=device-width, initial-scale=1'/>
-    <meta name='keywords' content=''/>
-    <meta name='description' content='欢迎访问星巴克中国官网。'>
-    <meta name='baidu-site-verification' content='u7Vir8pZFL' />
-    <link rel='canonical' href='/'>
-
-    <!-- Open graph -->
-    <meta property='og:site_name' content='星巴克'/>
-    <meta property='og:type' content='website'/>
-    <meta property='og:title' content='用每一杯咖啡传递星巴克独特的咖啡体验'/>
-    <meta property='og:url' content='/'/>
-    <meta property='og:description' content='欢迎访问星巴克中国官网。'/>
-    <meta property='og:image' content=''/>
-
-    <!-- Twitter card -->
-    <meta name='twitter:card' content='summary_large_image'/>
-    <meta name='twitter:site' content='{"username"=>"@starbucks"}'/>
-    <meta name='twitter:title' content='用每一杯咖啡传递星巴克独特的咖啡体验'/>
-    <meta name='twitter:description' content='欢迎访问星巴克中国官网。'/>
-    <meta name='twitter:image' content=''/>
-
     <!-- WeChat sharing -->
     <script>
     var WECHAT_TITLE = '星巴克官网: 用每一杯咖啡传递星巴克独特的咖啡体验';
@@ -147,8 +116,8 @@
                         </ul>
                     </div>
 
-                    <a class='icon trigger' rel='nav-overlay' id='nav-menu'>
-                        <img src='/assets/icons/icon-hamburger.svg'/>
+                    <a class='icon trigger' rel='nav-overlay' id='nav-menu'  onclick="act()">
+                        <img src='https://www.starbucks.com.cn//assets/icons/icon-hamburger.svg'/>
                         <span>更多</span>
                     </a>
 
@@ -182,13 +151,13 @@
             </div>
 
 
-            <div class='overlay ' id='nav-overlay'>
+            <div class='overlay' id='nav-overlay'>
                 <div class='container'>
                     <header class='header'>
                         <a class='logo' href='/'>
-                            <img src='/assets/images/logo.svg' alt='星巴克'/>
+                            <img src='https://www.starbucks.com.cn//assets/images/logo.svg' alt='星巴克'/>
                         </a>
-                        <button class='icon close'>Close</button>
+                        <button class='icon close' onclick="rem()">Close</button>
                     </header>
                     <section class='body'>
                         <div class='container middle'>
@@ -273,16 +242,9 @@
                     </section>
                     <footer class='footer'>
                         <div class='container'>
-
-
-
-
-
                             <a id='en-collapse' class='lang' href='javascript:void(window.location.pathname = "/en/")'>
                                 English
                             </a>
-
-
 
                             |
                             <a id='privacy-collapse' href='/help/legal/privacy-policy'>
@@ -309,135 +271,25 @@
                 </div>
             </div>
 
+
+<script type="text/javascript">
+function act(){
+        var c = document.getElementById('nav-overlay').getAttribute("class");
+        c = c.replace("overlay","overlay active");
+        document.getElementById('nav-overlay').setAttribute("class",c);
+}
+function rem(){
+    var c = document.getElementById('nav-overlay').getAttribute("class");
+    c = c.replace("overlay active","overlay");
+    document.getElementById('nav-overlay').setAttribute("class",c);
+}
+</script>
+
         </nav>
         <!-- Promotion banner -->
         <div id='app-promotion'></div>
         <!-- Page content -->
-        <!-- <section id='content'>
-            <div class='tag_ad'>广告</div>
-            <section class='hero'>
-                <div class='carousel-home'>
-                    <div><span id='home-campaign-1' class='block relative'><span></span><img src='/assets/images/featured/2018summer1/kv-starbucks-star-dash.png' class='tablet-block mobile-hidden' /><img src='/assets/images/featured/2018summer1/kv-starbucks-star-dash-mobile.png' class='show-mobile tablet-hidden' /></span></div>
-                    <div><a id='home-campaign-2' href='/menu/' class='block relative'><span></span><img src='/assets/images/featured/2018summer2/kv-beve.jpg' class='tablet-block mobile-hidden' /><img src='/assets/images/featured/2018summer2/kv-beve-mobile.jpg' class='show-mobile tablet-hidden' /></a></div>
-                    <div><a id='home-campaign-3' href='/menu/food/dragon-dumpling/' class='block relative'><span></span><img src='/assets/images/featured/2018summer1/kv-dumpling.jpg' class='tablet-block mobile-hidden' /><img src='/assets/images/featured/2018summer1/kv-dumpling-mobile.jpg' class='show-mobile tablet-hidden' /></a></div>
-                    <div><a id='home-campaign-4' href='/bogo/' class='block relative'><span></span><img src='/assets/images/homepage/bogo-kv-desktop.jpg' class='tablet-block mobile-hidden' /><img src='/assets/images/homepage/bogo-kv-mobile.jpg' class='show-mobile tablet-hidden' /></a></div>
-                </div>
-            </section>
 
-            <section class='promotion'>
-                <div class='wrapper fluid'>
-                    <div class='grid columns-3 padded-2'>
-                        <a id='home-left-campaign' href='https://tb.cn/qRzWwPw' onclick='if (window.innerWidth >= 800) this.href="https://starbucks.tmall.com/p/rd980825.htm";' target='_blank'><img src='/images/pages/starbucks-tmall-0611-cn.jpg' /></a>
-                        <a id='home-middle-campaign' href='https://www.starbucks.com.cn/design-studio/' target='_blank'><img src='/images/pages/starbucks-design-studio-web-china.jpg' /></a>
-                        <a id='home-right-campaign' href='https://www.starbucks.com.cn/about/careers/' target='_blank'><img src='/images/pages/homepage-career-cn.jpg' /></a>
-                    </div>
-                </div>
-            </section>
-
-            <script type='text/javascript'>
-            window._promotion_url = '/help/';
-            window._promotion_content = '《星享俱乐部活动的条款和条件》、《隐私权政策》及《星巴克网站使用条款》现已更新，并自2018年6月19日起生效。请点击此处以了解有关详情。';
-            </script>
-
-            <section class='program-msr bg-white'>
-                <div class='wrapper'>
-                    <div class='grid columns-2 padded-2'>
-                        <div>
-                            <h2 class='wrapper-mobile'>星享俱乐部</h2>
-                            <p class='light wrapper-mobile'>开启您的星享之旅，星星越多、会员等级越高、好礼越丰富。<a id="home-msr-learn-more" class='button link' href='/account/my-starbucks-rewards'>了解更多 ›</a></p>
-                            <p class='flex flex-wrap justify-center tablet-justify-start items-center wrapper-mobile margin-b0'>
-                                <a id='home-msr-signup' href='/account/register/' class='button unlogged-in-element'>注册</a><a id='home-msr-login'  href='/account/' class='button secondary unlogged-in-element'>登录</a>
-                            </p>
-                        </div>
-                        <div class='image'>
-                            <img src='/assets/images/logo-msr.svg' />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class='tmall center'>
-                <div class='wrapper'>
-                    <h2 class='wrapper-mobile'>星巴克精选</h2>
-                    <p class='light wrapper-mobile'>在星巴克天猫旗舰店发现更多咖啡心意</p>
-                    <ul class='grid columns-4 padded-2'>
-                        <li>
-                            <a id='home-tmall-msr' href='https://starbucks.m.tmall.com/shop/shop_auction_search.htm?spm=a320p.7692363.0.0.6ba91f1bBOpOVL&sort=default&shop_cn=%E5%AE%9E%E4%BD%93%E6%98%9F%E4%BA%AB%E5%8D%A1&ascid=1275566404&scid=1275566404' onclick='if (window.innerWidth >= 800) this.href= "https://starbucks.tmall.com/p/rd515396.htm?spm=a1z10.1-b-s.w5001-14489348230.7.MtuIoi";' target='_blank'>
-                                <img src='/assets/images/homepage/tmall-card-01.png' />
-                                <p class='title-1'><strong>星享卡</strong></p>
-                                <p class='margin2'>开始您的<br/>星巴克专属之旅</p>
-                                <p class='caption'>了解更多 ›</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a id='home-tmall-svc' href='https://starbucks.m.tmall.com/shop/shop_auction_search.htm?spm=a1z60.7754813.0.0.55b01f1b3ATuTF&sort=default&shop_cn=%E8%99%9A%E6%8B%9F%E6%98%9F%E7%A4%BC%E5%8D%A1&ascid=1275566403&scid=1275566403' onclick='if (window.innerWidth >= 800) this.href= "https://starbucks.tmall.com/p/rd993825.htm?spm=a1z10.1-b-s.w5001-14489348230.6.MtuIoi";' target='_blank'>
-                                <img src='/assets/images/homepage/tmall-card-02.png' />
-                                <p class='title-1'><strong>星礼卡</strong></p>
-                                <p class='margin2'>用一份心礼<br/>让心意相随</p>
-                                <p class='caption'>了解更多 ›</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a id='home-tmall-drink' href='https://starbucks.m.tmall.com/shop/shop_auction_search.htm?spm=a1z60.7754813.0.0.387c1f1bxr89O6&sort=default&shop_cn=%E7%94%B5%E5%AD%90%E9%A5%AE%E5%93%81%E5%88%B8&ascid=1275566407&scid=1275566407' onclick='if (window.innerWidth >= 800) this.href= "https://starbucks.tmall.com/p/rd103766.htm?spm=a1z10.1-b-s.w5001-14489348230.8.MtuIoi";' target='_blank'>
-                                <img src='/assets/images/homepage/tmall-eticket.png' />
-                                <p class='title-1'><strong>电子产品券</strong></p>
-                                <p class='margin2'>心意<br/>从这一杯开始</p>
-                                <p class='caption'>了解更多 ›</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a id='home-tmall-coffee' href='https://starbucks.m.tmall.com/shop/shop_auction_search.htm?spm=a320p.7692363.0.0.7159451a5M4FwA&sort=default&shop_cn=%E5%92%96%E5%95%A1&ascid=1356509430&scid=1356509430' onclick='if (window.innerWidth >= 800) this.href= "https://starbucks.tmall.com/category-1141443816.htm?spm=a1z10.1-b-s.w4006-14489348233.10.MtuIoi";' target='_blank'>
-                                <img src='/assets/images/homepage/tmall-reserve.png' />
-                                <p class='title-1'><strong>咖啡生活</strong></p>
-                                <p class='margin2'>星巴克<br/>用心制作</p>
-                                <p class='caption'>了解更多 ›</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class='coffeehouse'>
-                <div class='wrapper center'>
-                    <h2 class='wrapper-mobile'>1912 派克街 | 咖啡星讲堂</h2>
-                    <p class='light wrapper-mobile'>了解更多星巴克咖啡文化</p>
-                </div>
-                <div class='scroll-wrapper'>
-                    <div class='scroll-arrow scroll-arrow-left'>
-                        <img src='/assets/icons/icon-scroll-left.svg' />
-                    </div>
-                    <div class='scroll'>
-                        <div class='wrapper'>
-                            <div class="scroll-items">
-                                <a id='home-blog-origin' target='_blank' href='/coffee-blog/the-origin-of-coffee-and-its-cultivation/' class='thumbnail rect card'>
-                                    <div class='preview' style='background-image: url(/assets/images/homepage/coffeehouse-coffee-cultivation-kv.jpg)'></div>
-                                    <span class='tag'>咖啡知识</span>
-                                    <strong>咖啡的起源与培植</strong>
-                                </a>
-                                <a id='home-blog-fundamentals' target='_blank' href='/coffee-blog/the-4-fundamentals/' class='thumbnail rect card'>
-                                    <div class='preview' style='background-image: url(/assets/images/homepage/coffeehouse-4-fundamentals-kv.jpg)'></div>
-                                    <span class='tag'>咖啡品鉴</span>
-                                    <strong>咖啡调制</strong>
-                                </a>
-                                <a id='home-blog-roast' target='_blank' href='/coffee-blog/roast-story/' class='thumbnail rect card'>
-                                    <div class='preview' style='background-image: url(/assets/images/homepage/coffeehouse-roast-story-kv.jpg)'></div>
-                                    <span class='tag'>咖啡知识</span>
-                                    <strong>咖啡烘焙</strong>
-                                </a>
-                                <a id='home-blog-pour' target='_blank' href='/coffee-blog/pour-over/' class='thumbnail rect card'>
-                                    <div class='preview' style='background-image: url(/assets/images/homepage/coffeehouse-pour-over-kv.jpg)'></div>
-                                    <span class='tag'>咖啡品鉴</span>
-                                    <strong>手冲咖啡</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='scroll-arrow scroll-arrow-right'>
-                        <img src='/assets/icons/icon-scroll-right.svg' />
-                    </div>
-                </div>
-                </section>
-            </div>
-        </section> -->
     </div>
     <div id='app-notification'></div>
     <div id='app-loading'></div>
